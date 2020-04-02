@@ -1,0 +1,43 @@
+{
+  "name": "rony-koa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/server.js",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "chalk": "^3.0.0",
+    "cottage": "^3.1.3",
+    "glob": "^7.1.6",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.13",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-send": "^5.0.0",
+    "pg": "^8.0.0"
+  },
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "nodemon": "^2.0.2",
+    "prettier": "2.0.2"
+  },
+  "scripts": {
+    "prettier:check": "prettier --check .",
+    "prettier:format": "prettier --write .",
+    "dev": "nodemon --inspect .",
+    "start:server:prod": "NODE_ENV=production node bin/server.js",
+    "start:server:staging": "NODE_ENV=staging node bin/server.js",
+    "start:server": "node bin/server.js",
+    "start:worker": "node bin/worker.js",
+    "start:worker:prod": "NODE_ENV=production node bin/worker.js",
+    "start:worker:staging": "NODE_ENV=staging node bin/worker.js",
+    "db:migrate": "npx knex migrate:latest",
+    "db:rollback": "npx knex migrate:rollback"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier:check"
+    }
+  },
+  "author": "",
+  "license": "ISC"
+}
