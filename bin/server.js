@@ -47,6 +47,10 @@ app.use(jwtValidator());
 
 injectPrivateRoutes(app);
 
+process.on('unhandledRejection', function(err) {
+  console.error(err);
+});
+
 // Run the engines!
 app.listen(PORT, () => {
   console.log(`Listening on ${PORT}`);
