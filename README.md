@@ -1,6 +1,6 @@
-# Hire Me
+# Rony Koa
 
-A Simple index of job listings for people that are looking for job.
+Koa Boilerplate based off of a few of my previous projects
 
 ## Badges
 
