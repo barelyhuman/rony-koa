@@ -47,8 +47,9 @@ app.use(jwtValidator());
 
 injectPrivateRoutes(app);
 
-process.on('unhandledRejection', function(err) {
+process.on('unhandledRejection', function (err) {
   console.error(err);
+  ctx.throw(err.code,err.message);
 });
 
 // Run the engines!
