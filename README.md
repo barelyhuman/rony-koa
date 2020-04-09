@@ -1,4 +1,4 @@
-# Hire Me
+# Rony Koa
 
 A Simple index of job listings for people that are looking for job.
 
@@ -86,8 +86,7 @@ This is just a gist of what's being used in this project
 - Router: [CottageJS](https://github.com/therne/cottage)
 - Code Formatter: [Prettier](https://github.com/prettier/prettier)
 - Git Hooks: [Husky](https://github.com/typicode/husky)
-- Authorization(Current): [JWT](https://www.npmjs.com/package/jsonwebtoken)
-- Authorization(Future Releases): [Magic.Link](https://magic.link/)
+- Authorization: [JWT,Magic link signup](https://www.npmjs.com/package/jsonwebtoken)
 - Crypto: [bcrypt](https://www.npmjs.com/package/bcrypt)
 
 ## Why no linters ?
