@@ -84,7 +84,6 @@ injectPrivateRoutes(app);
 
 process.on('unhandledRejection', (err) => {
   console.error(err);
-  debugger;
   throw err;
 });
 
